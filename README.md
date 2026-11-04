@@ -1,13 +1,10 @@
-[dokumen_readme_utama.md](https://github.com/user-attachments/files/34365164/dokumen_readme_utama.md)
 # 🔤 Desain Font Terhadap Buatan Intelijen
 
-> **Paket Skill Panduan Sampel Font & Anti-AI Slop Layout** yang dilengkapi dengan skema pemicu berantai otomatis dan skrip eksekutor untuk Agentic AI.
-
-Dokumen ini berfungsi sebagai panduan operasional serta kontrol kualitas tata letak tipografi lintas-aksara (Latin & Non-Latin/Hanzi) agar hasil generasi AI tetap konsisten, profesional, dan bebas dari *AI Slop*.
+> **Panduan Operasional & Alur Eksekusi Agentic AI**: Berkas ini mengatur alur kerja sekuensial dan kontrol kualitas tipografi (*Anti-AI Slop Layout*) saat dibaca oleh sistem atau Agentic AI.
 
 ## 🏗️ Struktur Berkas & Pemicu Berantai (*Nested Triggers*)
 
-Seluruh berkas tersusun dalam hierarki direktori linier dengan skema pemicu data dan skrip eksekusi otomatis:
+Hierarki direktori dan pemicu sekuensial untuk alur kerja Agentic AI:
 
 ```text
 desain-font-terhadap-buatan-Intelijen/
@@ -22,12 +19,12 @@ desain-font-terhadap-buatan-Intelijen/
         ├─> 📄 1. SKILL.md         <-- Aturan Sistem & Anti-AI Slop Rules
         ├─> 📄 strukturnya.txt     <-- Panduan Operasional Visual & Manfaat Desain
         │
-        └─> 📜 trigger_package_save <-- Pemicu Level 3 (Final Save ke Memori Aktif)
+        └─> 📜 trigger_package_save <-- Pemicu Level 3 (Penyimpanan ke Memori Aktif)
 ```
 
-## 🔄 Alur Logika Eksekusi Sekuensial
+## 🔄 Logika Eksekusi Otomatis
 
-Sistem membaca dan mengeksekusi instruksi secara linier berantai dari atas ke bawah:
+Alur kerja linier berantai dari root hingga penyimpanan memori aktif:
 
 ```text
 [ Root Directory ]
@@ -37,65 +34,53 @@ Sistem membaca dan mengeksekusi instruksi secara linier berantai dari atas ke ba
                     ├─> Read: trigger_panduan & Run: auto_installer
                     ├─> Read: 1. SKILL.md (Instruksi Sistem & Anti-AI Slop Rules)
                     ├─> Read: strukturnya.txt (Panduan Operasional & Manfaat Desain)
-                    └─> Execute: trigger_package_save -> Save ke @Agentic AI Memori Aktif
+                    └─> Execute: trigger_package_save -> Save ke Memori Aktif Agentic AI
 ```
 
-### Rincian Tahapan Logic:
+## 🤖 Cara Pengoperasian & Eksekusi di Agentic AI
 
-1. **`trigger_root`**: Membuka jalur awal dan memaksa AI membaca daftar inventaris `daftar_font.txt`.
-2. **`trigger_panduan` & `auto_installer`**: Mengaktifkan eksekusi di folder `/panduan-sampel-font` untuk memuat aturan tipografi pada `1. SKILL.md` dan `strukturnya.txt`.
-3. **`trigger_package_save`**: Mengunci seluruh aturan dan menyimpannya langsung ke memori aktif Agentic AI.
+Anda dapat memicu alur eksekusi Agentic AI menggunakan salah satu dari dua cara di bawah ini:
 
-## 🎯 Manfaat Desain & Quality Control (Anti-AI Slop)
+### Opsi 1: Cara Tercepat (Komen Link GitHub & Prompt Direct) — *Tanpa Upload Berkas*
 
-1. **Pencegahan Visual Hallucination / AI Slop**:
-   - Menghindari penggunaan font acak yang tidak kompatibel atau tidak terinstal di OS target.
-   - Mencegah kegagalan rendering aksara non-Latin (seperti Hanzi/Mandarin) dengan menyertakan *fallback* CSS baku.
-2. **Aturan Maksimal 2 Font**:
-   - Mengunci kombinasi tampilan maksimal 2 jenis font per dokumen/UI (1 untuk Heading/Judul, 1 untuk Body/Isi).
-3. **Konsistensi Hierarki Visual**:
-   - Menentukan secara ketat rasio ukuran (`font-size`) dan ketebalan (`font-weight`) untuk menjaga keterbacaan (*readability*).
+Gunakan cara ini untuk meminta Agentic AI membaca repositori GitHub Anda secara langsung menggunakan tautan (*link*):
 
-## 💻 Panduan Penggunaan GitHub CLI (`gh`)
+1. **Format Komen Prompt di Chat AI**:
+   Salin dan kirimkan salah satu perintah komen berikut di kolom chat:
 
-### 1. Inisialisasi & Unggah Proyek Baru
+   > `@Agentic AI baca https://github.com/IR-0058/desain-font-terhadap-buatan-Intelijen.git dan jalankan trigger_root`
 
-Jalankan perintah berikut pada terminal lokal di dalam folder proyek Anda:
+   *Atau jika menggunakan perayap repositori/IDE (Cursor/VSCode):*
 
-```bash
-# Buka folder proyek
-cd /path/ke/folder/desain-font-terhadap-buatan-Intelijen
+   > `Fetch repo https://github.com/IR-0058/desain-font-terhadap-buatan-Intelijen.git lalu jalankan sekuensial dari trigger_root sampai trigger_package_save`
 
-# Inisialisasi Git lokal & staging berkas
-git init
-git add .
-git commit -m "Initial commit: Struktur pemicu berantai Panduan Sampel Font & Anti-AI Slop"
+2. **Eksekusi Otomatis**:
+   AI akan langsung mengkloning/membaca repositori GitHub tersebut, mendeteksi `trigger_root`, membaca `daftar_font.txt`, mengeksekusi `auto_installer` di folder panduan, dan menyerap aturan di `1. SKILL.md` serta `strukturnya.txt`.
 
-# Buat repositori publik di GitHub & push otomatis
-gh repo create desain-font-terhadap-buatan-Intelijen --public --source=. --remote=origin --push
-```
-
-### 2. Memperbarui Berkas (Update Routine)
-
-Jika Anda memperbarui daftar font atau aturan pemicu di kemudian hari:
-
-```bash
-git add .
-git commit -m "Update aturan tipografi dan pemicu otomatis"
-git push
-```
-
-### 3. Menghapus Repositori via GitHub CLI
-
-Jika Anda ingin menghapus repositori ini dari GitHub:
-
-```bash
-# Minta perizinan token khusus penghapusan repositori
-gh auth refresh -s delete_repo
-
-# Hapus repositori secara langsung
-gh repo delete IR-0058/desain-font-terhadap-buatan-Intelijen --yes
-```
+3. **Penguncian Memori**:
+   Sistem mengakhiri alur pada `trigger_package_save` dan siap menerapkan aturan tipografi pada proyek Anda.
 
 ---
-*Dikembangkan untuk efisiensi otomatisasi Agentic AI & kepatuhan standar desain visual.*
+
+### Opsi 2: Upload Berkas `.zip` Langsung
+
+Gunakan cara ini jika Anda ingin mengunggah berkas proyek dalam bentuk arsip compressed `.zip`:
+
+1. **Unggah Berkas**:
+   Unggah berkas `desain-font-terhadap-buatan-Intelijen.zip` (atau `model_font_triggered_project_v2.zip`) langsung ke kolom chat Agentic AI.
+
+2. **Format Komen / Perintah Pengunggah**:
+   Sertakan pesan singkat bersama berkas yang diunggah:
+
+   > *"Tolong ekstrak zip ini, lalu jalankan alur pemicu berantai mulai dari `trigger_root` hingga `trigger_package_save`."*
+
+3. **Penyimpanan Berantai**:
+   AI mengekstrak folder, membaca indeks font, mengeksekusi skrip pendukung, dan mengunci seluruh aturan Anti-AI Slop ke dalam memori aktif.
+
+---
+
+## 🎯 Aturan Kontrol Kualitas (Anti-AI Slop)
+
+1. **Pencegahan Visual Hallucination**: Menghindari penggunaan font acak yang tidak terinstal atau tidak kompatibel lintas platform.
+2. **Batas Maksimal 2 Font**: Membatasi penggunaan font maksimal 2 jenis dalam satu tata letak/tampilan dokumen.
+3. **Standar Konsistensi**: Menjaga rasio ukuran (`font-size`) dan ketebalan (`font-weight`) agar hasil desain AI tetap konsisten dan profesional.
