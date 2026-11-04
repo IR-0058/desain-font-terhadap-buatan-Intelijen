@@ -1,0 +1,8 @@
+{
+  "step_id": 1,
+  "level": "root",
+  "target_file": "daftar_font.txt",
+  "next_directory": "panduan-sampel-font",
+  "next_trigger": "trigger_panduan.json",
+  "action": "AUTO_READ_INDEX"
+}

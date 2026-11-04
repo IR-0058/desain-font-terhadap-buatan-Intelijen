@@ -1,0 +1,4 @@
+=====================================================================
+STRUKTUR PENYUSUNAN & MANFAAT DESAIN ANTI-AI SLOP (PANDUAN OPERASIONAL)
+=====================================================================
+Tujuan: Memberikan gambaran logis dan struktur baku bagaimana setiap font didokumentasikan agar mudah dipahami oleh manusia dan dieksekusi oleh AI/Agentic.

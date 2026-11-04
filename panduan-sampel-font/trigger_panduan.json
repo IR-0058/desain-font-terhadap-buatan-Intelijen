@@ -1,0 +1,11 @@
+{
+  "step_id": 2,
+  "level": "sub_folder",
+  "targets": [
+    "1. SKILL.md",
+    "strukturnya.txt"
+  ],
+  "executor_script": "auto_installer.py",
+  "next_trigger": "trigger_package_save.json",
+  "action": "AUTO_READ_RULES_AND_EXECUTE"
+}
