@@ -1,0 +1,12 @@
+{
+  "trigger_id": "trigger_bundle_lite",
+  "version": "2.0.0",
+  "mode": "2_FILE_COMPATIBILITY",
+  "file_1": "1_TRIGGERS_AND_INDEX.json",
+  "file_2": "2_SKILL_AND_RULES.md",
+  "execution_order": [
+    "READ_FILE_1",
+    "APPLY_FILE_2"
+  ],
+  "action": "AUTO_LOAD_RULES"
+}

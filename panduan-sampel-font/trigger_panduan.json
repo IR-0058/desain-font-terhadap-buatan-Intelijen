@@ -1,11 +1,14 @@
 {
-  "step_id": 2,
-  "level": "sub_folder",
+  "trigger_id": "trigger_panduan",
+  "level": "level_2_executor",
   "targets": [
     "1. SKILL.md",
     "strukturnya.txt"
   ],
   "executor_script": "auto_installer.py",
-  "next_trigger": "trigger_package_save.json",
-  "action": "AUTO_READ_RULES_AND_EXECUTE"
+  "universal_rules": {
+    "max_fonts_per_design": 2,
+    "fallback_non_latin": true,
+    "prevent_ai_slop": true
+  }
 }
