@@ -1,5 +1,25 @@
 {
   "trigger_id": "trigger_package_save",
-  "status": "LOADED_TO_MEMORY",
-  "message": "Aturan Tipografi Anti-AI Slop berhasil dimuat ke memori AI aktif."
+  "version": "3.0.0",
+  "action": "PREPARE_PLATFORM_SPECIFIC_PERSISTENCE",
+  "default_status": "NOT_INSTALLED",
+  "allowed_statuses": [
+    "NOT_INSTALLED",
+    "INSTRUCTIONS_PREPARED",
+    "LOCAL_PROJECT_FILES_CREATED",
+    "PLATFORM_SAVE_CONFIRMED"
+  ],
+  "success_evidence_required": true,
+  "success_evidence_examples": [
+    "User confirms saved setting",
+    "Platform connector reports successful write",
+    "Local installer confirms file creation at exact path"
+  ],
+  "must_not_claim": [
+    "model weights changed",
+    "all listed AI services updated",
+    "plugin installed globally",
+    "account memory saved without confirmation"
+  ],
+  "next_action": "Choose the platform's documented Instructions, Project, Skill, Agent, Brand Kit, or repository-rules feature; if none exists, use a prompt/preset per task."
 }

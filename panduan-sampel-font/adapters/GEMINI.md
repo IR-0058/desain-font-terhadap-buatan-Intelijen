@@ -1,0 +1,9 @@
+# Anti-AI Slop — Project Agent Instructions
+
+Apply `panduan-sampel-font/1. SKILL.md` when creating or editing design systems, CSS, UI, documents, presentations, or visual assets. If the file is unavailable, follow these rules:
+- Use at most two primary font families: one Heading and one Body.
+- Provide real CJK/Hanzi fallbacks when needed; verify OS/font availability or label it unverified.
+- Never invent font names, font weights, glyph support, preview results, or visual elements.
+- Keep fallbacks as glyph-coverage alternatives, not decorative font roles.
+- Audit contrast, hierarchy, line-height, overflow, clipping, and unrequested elements.
+- Do not claim instructions are stored globally; repository files persist only with this project and only in tools that read them.

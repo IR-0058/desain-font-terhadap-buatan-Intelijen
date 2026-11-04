@@ -1,4 +1,16 @@
-=====================================================================
-STRUKTUR PENYUSUNAN & MANFAAT DESAIN ANTI-AI SLOP (PANDUAN OPERASIONAL)
-=====================================================================
-Tujuan: Memberikan gambaran logis dan struktur baku bagaimana setiap font didokumentasikan agar mudah dipahami oleh manusia dan dieksekusi oleh AI/Agentic.
+# STRUKTUR OPERASIONAL
+
+## Rantai pemicu
+`trigger_root -> trigger_panduan -> trigger_package_save`
+
+- `trigger_root`: membaca indeks, menentukan alur, memanggil tahap panduan, dan mengarahkan ke tahap pelaporan penyimpanan.
+- `trigger_panduan`: menerapkan dua font utama, fallback aksara, dan pemeriksaan anti-visual-hallucination.
+- `trigger_package_save`: menyiapkan teks untuk fitur penyimpanan platform dan hanya melaporkan status yang memiliki bukti.
+
+## Batas kemampuan
+File JSON tidak mengeksekusi dirinya sendiri. AI harus membaca dan mematuhi instruksi, atau host/agent harus memiliki runtime yang menjalankan skrip. Skrip lokal hanya dapat menyiapkan file di direktori proyek yang dipilih; skrip tidak dapat menulis ke akun cloud AI tanpa API/connector resmi, autentikasi, izin, dan endpoint yang sesuai.
+
+## Mode penggunaan
+- Mode 1: satu Markdown, cocok untuk unggah satu file atau salin-tempel prompt.
+- Mode 2: dua file, cocok untuk host dengan batas dua berkas.
+- Mode 3: agentic/local code, untuk validasi paket dan pemasangan file instruksi pada repo lokal.

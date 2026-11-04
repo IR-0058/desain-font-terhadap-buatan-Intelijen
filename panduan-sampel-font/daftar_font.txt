@@ -1,0 +1,22 @@
+# GLOBAL FONT INDEX — MULTI-SCRIPT
+
+## Font referensi Latin
+- Arial
+- Times New Roman
+- Helvetica
+- Calibri
+- Roboto
+- Open Sans
+
+## Font referensi Hanzi / CJK
+- STHeiti / 华文黑体 — sans-serif; ketersediaan bergantung OS.
+- PingFang SC — sans-serif; umum pada macOS/iOS.
+- SimSun / 中易宋体 — serif; ketersediaan bergantung OS.
+- STKaiti / 华文楷体 — kai/script; ketersediaan bergantung OS.
+
+## Fallback CJK yang umum pada platform tertentu
+- Windows: Microsoft YaHei (sans), SimSun (serif), KaiTi (kai).
+- macOS/iOS: PingFang SC; font CJK lain dapat berbeda menurut versi OS.
+- Linux: Noto Sans CJK SC dan Noto Serif CJK SC bila paket font dipasang.
+
+**Penting:** indeks ini adalah daftar referensi, bukan bukti bahwa font tertentu sudah terpasang pada perangkat. Periksa font yang tersedia sebelum menyatakan font siap digunakan. Jangan mengarang nama font, versi, lisensi, glyph, atau bobot.

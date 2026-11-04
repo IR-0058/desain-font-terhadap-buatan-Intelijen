@@ -1,0 +1,43 @@
+{
+  "trigger_id": "trigger_root",
+  "version": "3.0.0",
+  "trigger_type": "instruction_orchestrator",
+  "execution_chain": [
+    "trigger_root",
+    "trigger_panduan",
+    "trigger_package_save"
+  ],
+  "steps": [
+    {
+      "order": 1,
+      "action": "READ_PACKAGE_INDEX",
+      "source": "daftar_font.txt"
+    },
+    {
+      "order": 2,
+      "action": "LOAD_SKILL_AND_STRUCTURE",
+      "sources": [
+        "1. SKILL.md",
+        "strukturnya.txt"
+      ]
+    },
+    {
+      "order": 3,
+      "action": "RUN_COMPATIBILITY_VALIDATION",
+      "source": "auto_installer.py",
+      "condition": "Only if the AI can execute local Python and file access is explicitly available; otherwise perform a textual self-check."
+    },
+    {
+      "order": 4,
+      "action": "APPLY_RULES",
+      "source": "trigger_panduan.json"
+    },
+    {
+      "order": 5,
+      "action": "REPORT_PERSISTENCE",
+      "source": "trigger_package_save.json"
+    }
+  ],
+  "fallback": "If triggers/scripts cannot run, read the files as plain text and apply the rules manually.",
+  "non_claim_rule": "Reading this JSON does not install a plugin, change model weights, or write to account memory."
+}

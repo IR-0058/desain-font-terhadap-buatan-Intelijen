@@ -1,14 +1,34 @@
 {
   "trigger_id": "trigger_panduan",
+  "version": "3.0.0",
   "level": "level_2_executor",
   "targets": [
     "1. SKILL.md",
+    "daftar_font.txt",
     "strukturnya.txt"
   ],
-  "executor_script": "auto_installer.py",
-  "universal_rules": {
-    "max_fonts_per_design": 2,
-    "fallback_non_latin": true,
-    "prevent_ai_slop": true
-  }
+  "apply_when": [
+    "create_design",
+    "edit_design",
+    "review_typography",
+    "generate_visual_asset",
+    "write_frontend_css",
+    "prepare_document_or_presentation"
+  ],
+  "rules": {
+    "max_primary_font_families": 2,
+    "heading_roles": 1,
+    "body_roles": 1,
+    "non_latin_fallback": "REQUIRED_WHEN_SCRIPT_PRESENT",
+    "anti_visual_hallucination": true
+  },
+  "validation_checks": [
+    "font_names_are_real_and_not_invented",
+    "font_weights_are_supported_or_marked_unverified",
+    "glyph_coverage_is_tested_or_marked_unverified",
+    "no_unrequested_visual_elements",
+    "no_unverified_preview_or_render_claim"
+  ],
+  "font_availability": "Inventory is a reference, not proof of installation. Verify target OS/device.",
+  "execution_fallback": "If automation is unavailable, conduct the checks in natural language."
 }

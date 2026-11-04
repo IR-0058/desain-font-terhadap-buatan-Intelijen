@@ -1,57 +1,42 @@
-# Panduan Alur Kerja Repositori: desain-font-terhadap-buatan-Intelijen
+# desain-font-terhadap-buatan-Intelijen — v3.0.0
 
-Repositori ini memuat **Skill Panduan Sampel Font & Anti-AI Slop Layout** yang dilengkapi pemicu berantai (*nested triggers*) serta pembagian folder sesuai kapasitas pembacaan berkas berbagai platform AI.
+Paket ini mengemas aturan Anti-AI Slop dengan tiga cara distribusi sesuai batas file AI.
 
----
-
-## 📂 Struktur Berkas & Pembagian Folder
-
+## Struktur
 ```text
 desain-font-terhadap-buatan-Intelijen/
-│
-├── 📁 mode-1-file-instant/            <-- [KHUSUS AI 1 BERKAS / PROMPT TEXT]
-│   └── BUNDLE_1FILE_TRIGGER_SKILL.md  (Gabungan Triggers + Anti-AI Slop + Indeks Font)
-│
-├── 📁 mode-2-file-lite/               <-- [KHUSUS AI LIMIT 2 BERKAS]
-│   ├── 1_TRIGGERS_AND_INDEX.json     (Pemicu Level 1 & 2 + Indeks Font)
-│   └── 2_SKILL_AND_RULES.md          (Aturan Anti-AI Slop)
-│
-└── 📁 panduan-sampel-font/            <-- [KHUSUS AGENTIC / FULL CODE AI]
+├── mode-1-file-instant/
+│   └── BUNDLE_1FILE_TRIGGER_SKILL.md
+├── mode-2-file-lite/
+│   ├── 1_TRIGGERS_AND_INDEX.json
+│   └── 2_SKILL_AND_RULES.md
+└── panduan-sampel-font/
     ├── trigger_root.json
     ├── trigger_panduan.json
     ├── trigger_package_save.json
     ├── auto_installer.py
     ├── 1. SKILL.md
-    └── strukturnya.txt
+    ├── daftar_font.txt
+    ├── strukturnya.txt
+    ├── PLATFORM_SETUP.md
+    └── adapters/
 ```
 
----
+## Pilih mode
+- **Mode 1:** unggah/salin satu Markdown ke AI yang hanya menerima satu berkas atau prompt.
+- **Mode 2:** unggah dua berkas JSON + Markdown sesuai namanya.
+- **Mode 3:** untuk agent yang dapat membaca file dan menjalankan Python. Jalankan `python auto_installer.py --check` dari folder `panduan-sampel-font`.
 
-## 🚀 Cara Mengoperasikan di Agentic AI
+## Instalasi lokal untuk repo coding
+```bash
+python auto_installer.py --install-local "PATH_KE_REPO"
+```
+Skrip membuat adapter `AGENTS.md`, `GEMINI.md`, `CLAUDE.md`, `.github/copilot-instructions.md`, dan `.cursor/rules/anti-ai-slop.mdc`. File yang sudah ada tidak ditimpa kecuali menggunakan `--force` (akan dibuat backup `.bak`).
 
-### 1. Cara 1: Lewat Perintah Sederhana (Cara Tercepat / Text Prompt)
+## Yang paket ini tidak lakukan
+- Tidak memasang satu plugin universal ke 58+ layanan AI.
+- Tidak mengubah bobot/otak model.
+- Tidak menulis ke akun cloud tanpa fitur resmi, autentikasi, izin, dan tindakan pengguna.
+- Tidak dapat menjamin bahwa setiap generator visual mematuhi tipografi atau merender Hanzi dengan akurat.
 
-Jika AI tidak memiliki fitur pembacaan file/link repositori eksternal, cukup salin dan tempel perintah pemicu sederhana ini ke dalam chatbox:
-
-> **Salin Prompt Ini:**
-> *"Jalankan pemicu berantai dari repositori https://github.com/IR-0058/desain-font-terhadap-buatan-Intelijen.git: trigger_root -> trigger_panduan -> trigger_package_save. Terapkan aturan Anti-AI Slop: maksimal 2 font per desain (1 Heading + 1 Body), sediakan fallback aksara Non-Latin (Hanzi/CJK), dan hindari visual hallucination."*
-
----
-
-### 2. Cara 2: Lewat Berkas `.zip` (Upload Langsung)
-
-Jika menggunakan AI yang mendukung instruksi pengunggahan berkas/folder:
-
-1. Unggah berkas `desain-font-terhadap-buatan-Intelijen-master.zip` ke dalam sesi chatbox.
-2. Ketik instruksi pemicu sederhana berikut:
-
-> **Salin Prompt Ini:**
-> *"Ekstrak berkas .zip ini dan jalankan pemicu berantai trigger_root hingga trigger_package_save. Simpan aturan Anti-AI Slop ke dalam memori aktif."*
-
----
-
-## 🎯 Aturan Kualitas Anti-AI Slop (Aktif)
-
-1. **Maksimal 2 Font per Desain**: Hanya mengombinasikan 1 Font Utama (Heading/Display) dan 1 Font Sekunder (Body Text).
-2. **Fallback Aksara Non-Latin Wajib**: Menyediakan stack CSS font CJK/Hanzi valid (*STHeiti, PingFang SC, SimSun, STKaiti*).
-3. **Pencegahan Visual Hallucination**: Menghindari penggunaan nama font fiktif atau variasi bobot font (*font-weight*) acak.
+Status “permanen” hanya benar dalam scope yang disimpan: akun, Gem/Skill, proyek, repo, agent, brand kit, atau workflow tertentu. Lihat `panduan-sampel-font/PLATFORM_SETUP.md`.
