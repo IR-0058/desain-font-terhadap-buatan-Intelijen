@@ -34,7 +34,7 @@ desain-font-terhadap-buatan-Intelijen/
 Jika AI tidak memiliki fitur pembacaan file/link repositori eksternal, cukup salin dan tempel perintah pemicu sederhana ini ke dalam chatbox:
 
 > **Salin Prompt Ini:**
-> *"Jalankan pemicu berantai: trigger_root -> trigger_panduan -> trigger_package_save. Terapkan aturan Anti-AI Slop: maksimal 2 font per desain (1 Heading + 1 Body), sediakan fallback aksara Non-Latin (Hanzi/CJK), dan hindari visual hallucination."*
+> *"Jalankan pemicu berantai dari repositori https://github.com/IR-0058/desain-font-terhadap-buatan-Intelijen.git: trigger_root -> trigger_panduan -> trigger_package_save. Terapkan aturan Anti-AI Slop: maksimal 2 font per desain (1 Heading + 1 Body), sediakan fallback aksara Non-Latin (Hanzi/CJK), dan hindari visual hallucination."*
 
 ---
 
