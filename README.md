@@ -1,77 +1,70 @@
-# Cara Memakai Skill `.LOGIC` di AI
-# How to Use the `.LOGIC` Skill in an AI
+# Cara Cepat Pakai Skill `.LOGIC`
+# Quick Way to Use the `.LOGIC` Skill
 
 **Sumber / Source:** https://github.com/IR-0058/desain-font-terhadap-buatan-Intelijen
 
 ---
 
-## Langkah 1 — Ambil file dari GitHub
-## Step 1 — Get the files from GitHub
+## Langkah 1 — Download ZIP
+## Step 1 — Download the ZIP
 
-**ID:** Buka repo di atas, lalu unduh (Code → Download ZIP), atau clone kalau sudah terbiasa pakai git. Pastikan kamu punya kelima file di folder `.LOGIC`: `README.md`, `SKILL.md`, `daftar_font.txt`, `spesifikasi_font.txt`, `skill_bantu.md`.
+**ID:** Buka repo di atas → tombol **Code** → **Download ZIP**. Ekstrak, pastikan ada folder `.LOGIC` berisi 5 file: `README.md`, `SKILL.md`, `daftar_font.txt`, `spesifikasi_font.txt`, `skill_bantu.md`.
 
-**EN:** Open the repo above, then download it (Code → Download ZIP), or clone it if you're used to git. Make sure you have all five files from the `.LOGIC` folder: `README.md`, `SKILL.md`, `daftar_font.txt`, `spesifikasi_font.txt`, `skill_bantu.md`.
-
----
-
-## Langkah 2 — Unggah file ke AI
-## Step 2 — Upload the files to the AI
-
-**ID:** Buka percakapan baru dengan AI (misalnya Claude), lalu lampirkan/unggah kelima file `.LOGIC` tadi ke dalam chat (atau ke Project Knowledge kalau pakai fitur Projects).
-
-**EN:** Open a new chat with the AI (e.g. Claude), then attach/upload all five `.LOGIC` files into the chat (or into Project Knowledge if you're using the Projects feature).
+**EN:** Open the repo above → **Code** button → **Download ZIP**. Extract it, make sure the `.LOGIC` folder with 5 files is there: `README.md`, `SKILL.md`, `daftar_font.txt`, `spesifikasi_font.txt`, `skill_bantu.md`.
 
 ---
 
-## Langkah 3 — Beri tahu AI untuk mengikuti instruksinya
-## Step 3 — Tell the AI to follow the instructions
+## Langkah 2 — Lempar ke AI + Prompt
+## Step 2 — Feed it to the AI + Prompt
 
-**ID:** Ketik perintah singkat, contoh:
+**ID:** Buka chat baru dengan AI apa pun yang kamu pakai (Claude, ChatGPT, Gemini, dll), unggah/lampirkan kelima file tadi, lalu ketik prompt ini:
 
-**EN:** Type a short instruction, for example:
+**EN:** Open a new chat with whichever AI you use (Claude, ChatGPT, Gemini, etc.), upload/attach all five files, then type this prompt:
 
 ```
-Ikuti instruksi di SKILL.md dan skill_bantu.md untuk bantu saya pilih font dan susun dokumen.
+Gabungkan isi README.md, SKILL.md, skill_bantu.md, spesifikasi_font.txt,
+dan daftar_font.txt menjadi SATU file SKILL.md yang ringkas dan lengkap,
+yang bisa langsung dipakai sebagai skill untuk memandu pengguna memilih
+font dan menyusun dokumen lewat alur Turn 1-3. Jangan ubah nomor/nama
+font. Format sebagai satu file markdown siap pakai.
 ```
+
 ```
-Follow the instructions in SKILL.md and skill_bantu.md to help me pick a font and structure my document.
+Merge the contents of README.md, SKILL.md, skill_bantu.md,
+spesifikasi_font.txt, and daftar_font.txt into ONE concise, complete
+SKILL.md file that can be used directly as a skill to guide users
+through font selection and document structuring via the Turn 1-3
+flow. Don't change any font numbers/names. Format it as a single
+ready-to-use markdown file.
 ```
 
 ---
 
-## Langkah 4 — Jawab menu kategori (Turn 1)
-## Step 4 — Answer the category menu (Turn 1)
+## Langkah 3 — Simpan sebagai SKILL.md di perangkat
+## Step 3 — Save it as SKILL.md on your device
 
-**ID:** AI akan menampilkan 7 kategori dokumen. Ketik angka kategori yang sesuai (1–7).
+**ID:** Setelah AI mengeluarkan hasilnya, simpan sebagai file `SKILL.md` di folder lokal perangkatmu (misalnya `Documents/skills/font-logic/SKILL.md`).
 
-**EN:** The AI will show 7 document categories. Type the number of the matching category (1–7).
-
----
-
-## Langkah 5 — Lihat rekomendasi & draf (Turn 2)
-## Step 5 — Review recommendations & draft (Turn 2)
-
-**ID:** AI menampilkan 3–6 pilihan font bernomor dan draf struktur dokumen. Baca, lalu pilih nomor font yang kamu mau — atau ketik "pilihkan untuk saya" kalau mau AI yang memutuskan.
-
-**EN:** The AI shows 3–6 numbered font options plus a draft document structure. Read it, then pick the font number you want — or type "choose for me" if you want the AI to decide.
+**EN:** Once the AI outputs the result, save it as a `SKILL.md` file in a local folder on your device (e.g. `Documents/skills/font-logic/SKILL.md`).
 
 ---
 
-## Langkah 6 — Konfirmasi & lanjut (Turn 3)
-## Step 6 — Confirm & continue (Turn 3)
+## Langkah 4 — Pasang sesuai AI yang dipakai
+## Step 4 — Load it depending on which AI you use
 
-**ID:** Setelah kamu ketik nomor font pilihanmu, AI akan menetapkan font itu dan melanjutkan menyusun dokumenmu sesuai kebutuhan yang sudah dijelaskan.
-
-**EN:** Once you type your chosen font number, the AI locks it in and continues building your document based on the needs you've described.
+| AI | ID — Cara pasang | EN — How to load it |
+|---|---|---|
+| **Claude (web/app)** | Unggah `SKILL.md` ke **Project Knowledge** pada sebuah Project | Upload `SKILL.md` to **Project Knowledge** in a Project |
+| **Claude Code / Cowork** | Taruh di `~/.claude/skills/<nama>/SKILL.md` (skill personal) | Place it at `~/.claude/skills/<name>/SKILL.md` (personal skill) |
+| **ChatGPT** | Buat **Custom GPT** → masukkan `SKILL.md` ke bagian *Knowledge* | Create a **Custom GPT** → add `SKILL.md` under *Knowledge* |
+| **Gemini** | Buat **Gem** baru → tempel isi `SKILL.md` ke instruksi Gem | Create a new **Gem** → paste `SKILL.md` content into the Gem's instructions |
+| **AI lain / lainnya** | Lampirkan `SKILL.md` di awal chat setiap kali mulai sesi baru | Attach `SKILL.md` at the start of every new chat session |
 
 ---
 
-## Tips Cepat / Quick Tips
+## Langkah 5 — Mulai pakai
+## Step 5 — Start using it
 
-**ID:**
-- Kalau punya pedoman wajib (kampus/instansi/klien), sebutkan dari awal supaya AI pakai itu, bukan saran umum.
-- Semua nomor font merujuk ke `daftar_font.txt` — kalau AI sebut font di luar daftar itu, minta dia cek ulang.
+**ID:** Di chat baru (dengan `SKILL.md` sudah terpasang/terlampir), cukup ketik kebutuhan dokumenmu. AI akan otomatis menampilkan menu kategori (Turn 1), lanjut rekomendasi font + draf (Turn 2), lalu konfirmasi font (Turn 3).
 
-**EN:**
-- If you have a mandatory style guide (campus/institution/client), mention it upfront so the AI uses that instead of generic suggestions.
-- All font numbers refer to `daftar_font.txt` — if the AI mentions a font outside that list, ask it to double-check.
+**EN:** In a new chat (with `SKILL.md` already loaded/attached), just type what document you need. The AI will automatically show the category menu (Turn 1), then font recommendations + draft (Turn 2), then font confirmation (Turn 3).
