@@ -1,7 +1,7 @@
 # ⚡ Cara cepat: Instalasi Skill / Keahlian(`SKILL.md`)
 
 **Sumber Repositori:**
-[GitHub — `IR-0058/desain-font-terhadap-buatan-Intelijen`](https://github.com/IR-0058/desain-font-terhadap-buatan-Intelijen)
+[GitHub — `https://github.com/IR-0058/font-skill.git`](https://github.com/IR-0058/font-skill.git)
 
 ## 🚀 Alur Otomatis 3 Langkah Kilat
 
@@ -13,7 +13,7 @@
 
 ## 📥 Langkah 1 — Unduh Berkas ZIP
 
-1. Buka repositori GitHub: `IR-0058/desain-font-terhadap-buatan-Intelijen`.
+1. Buka repositori GitHub: `https://github.com/IR-0058/font-skill.git`.
 
 2. Klik tombol **Code** -> Pilih **Download ZIP** (`desain-font-terhadap-buatan-Intelijen-master.zip`).
 
