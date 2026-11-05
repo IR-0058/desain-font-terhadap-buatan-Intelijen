@@ -50,22 +50,53 @@ Aturan Output:
 
 ---
 
-## 💾 Langkah 3 — Simpan Menjadi `SKILL.md` & Keahlian `membantu-memilih-font`
+## 💾 Langkah 3 — Menyimpan Keahlian & File Skill
 
-Setelah AI selesai mengekstrak dan menyusun berkas instruksi utuh:
+Setelah AI mengekstrak dan menyusun berkas instruksi:
 
-### 🌐 1. Google Gemini (Gems / Keahlian)
-1. Buka **Gemini** $\rightarrow$ Klik **Gems / Keahlian** $\rightarrow$ **Buat Gem Baru**.
-2. Beri nama Keahlian: **`membantu-memilih-font`**.
-3. Tempelkan seluruh isi output hasil ekstraksi AI ke kolom **Instruksi (Instructions)**.
-4. Klik **Simpan (Save)**. Keahlian kini aktif secara permanen!
+### 🌐 1. Google Gemini (Fitur Gems / Keahlian)
+1. Buka **Gemini** (`gemini.google.com`).
+2. Di panel kiri, klik **Gems Manager** / **Keahlian** $\rightarrow$ **Buat Gem Baru**.
+3. Beri nama Keahlian: **`membantu-memilih-font`**.
+4. Tempelkan seluruh isi instruksi yang dihasilkan AI ke dalam kolom **Instruksi (Instructions)**.
+5. Klik **Simpan (Save)**. Keahlian kini aktif secara permanen di akun Gemini Anda.
 
 ### 🟢 2. Simpan Berkas Lokal (`SKILL.md`)
-1. Salin output markdown dari AI dan simpan sebagai file bernama **`SKILL.md`**.
-2. File ini siap dipakai untuk:
-   * **Claude (Projects / Code CLI):** Unggah ke *Project Knowledge* atau taruh di `~/.claude/skills/membantu-memilih-font/SKILL.md`.
-   * **ChatGPT (Custom GPTs):** Unggah `SKILL.md` ke bagian *Knowledge*.
-   * **Cursor AI / Agentic LLM:** Masukkan `SKILL.md` ke aturan *system prompt* agent.
+1. Salin output Markdown dari AI dan simpan di komputer Anda sebagai file bernama **`SKILL.md`**.
+2. File ini dapat Anda unggah ke platform AI lain:
+   * **Claude (Projects / CLI):** Unggah ke *Project Knowledge* atau simpan di `~/.claude/skills/membantu-memilih-font/SKILL.md`.
+   * **ChatGPT (Custom GPTs):** Unggah berkas `SKILL.md` ke bagian *Knowledge*.
+   * **Cursor AI / Agentic LLM:** Masukkan berkas `SKILL.md` ke bagian rules/instructions agent.
+
+---
+
+## 🚀 Langkah 3 — Cara Menggunakan Dalam Percakapan
+
+> [!NOTE]
+> Setelah Keahlian **`membantu-memilih-font`** terpasang, Anda **TIDAK PERLU** mengunggah berkas lagi. Cukup ketik langsung kebutuhan dokumen Anda!
+
+```mermaid
+graph TD
+    A[Input Pengguna] --> B[Turn 1: Menu Kategori & Analisis]
+    B --> C[Turn 2: Draf & Rekomendasi Font]
+    C --> D[Turn 3: Konfirmasi & Output Final]
+```
+
+### 💬 Contoh Prompt Siap Pakai:
+* 🟢 `"Saya ingin membuat dokumen proposal bisnis formal untuk klien perbankan."`
+* 🔵 `"Buatkan draf laporan penelitian ilmiah dengan format font yang sesuai."`
+* 🔴 `"Saya butuh desain pamflet promosi produk UMKM makanan lokal."`
+
+---
+
+### 🔄 Penjelasan Alur Kerja (Turn 1 – Turn 3):
+
+1. **Turn 1 — Menu Kategori:**
+   AI menganalisis kebutuhan dokumen Anda dan menampilkan pilihan kategori beserta arah hierarki visual.
+2. **Turn 2 — Rekomendasi Font & Draf Konten:**
+   AI menyusun draf isi dokumen sekaligus memberikan rekomendasi kombinasi font (Latin / Non-Latin / Mandarin) yang presisi.
+3. **Turn 3 — Konfirmasi & Finalisasi:**
+   Anda mengonfirmasi pasangan font pilihan, lalu AI mengunci format serta memberikan panduan penataan spesifikasi cetak/digital lengkap.
 
 ---
 
