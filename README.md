@@ -13,70 +13,29 @@
 
 ---
 
-## 📥 Langkah 1 — Unduh Repositori
-
-> [!TIP]
-> **Petunjuk Cepat:** Anda hanya perlu mengunduh file ZIP sekali untuk mendapatkan seluruh instruksi dan daftar font.
-
-1. Buka repositori GitHub melalui tautan di atas.
-2. Klik tombol hijau **`Code`** $\rightarrow$ Pilih 📥 **`Download ZIP`**.
-3. Ekstrak file ZIP di perangkat Anda.
-4. Pastikan struktur berkas di dalam folder memuat:
-
-```text
-📦 desain-font-terhadap-buatan-Intelijen
+🎨 Cara Cepat Menggunakan Skill .LOGIC (panduan-sampel-font)🔗 Sumber Repositori:
+👉 GitHub — IR-0058/desain-font-terhadap-buatan-Intelijen📥 Langkah 1 — Unduh Repositori[!TIP]
+Petunjuk Cepat: Anda hanya perlu mengunduh file ZIP sekali untuk mendapatkan seluruh instruksi dan daftar font.Buka repositori GitHub melalui tautan di atas.Klik tombol hijau Code $\rightarrow$ Pilih 📥 Download ZIP.Ekstrak file ZIP di folder lokal komputer Anda.Pastikan isi folder memuat struktur berikut:📦 desain-font-terhadap-buatan-Intelijen
  ┣ 📄 README.md
  ┗ 📂 panduan-sampel-font/
     ┣ 📜 1. SKILL.md             <-- (Instruksi Utama Skill)
-    ┣ 📜 PLATFORM_SETUP.md        <-- (Panduan Lanjutan)
-    ┣ 📄 daftar_font.txt         <-- (Basis Data Font)
+    ┣ 📜 PLATFORM_SETUP.md        <-- (Panduan Lanjutan Platform)
+    ┣ 📄 daftar_font.txt         <-- (Daftar & Spesifikasi Font)
     ┣ 📄 strukturnya.txt
     ┣ 🐍 auto_installer.py        <-- (Skrip Pemasangan Otomatis)
     ┗ 📂 adapters/                <-- (Khusus Claude, Gemini, Copilot, dll.)
-```
-
----
-
-## ⚙️ Langkah 2 — Pemasangan Sesuai Platform AI
-
-Pilih metode di bawah ini sesuai dengan platform AI yang Anda gunakan:
-
-| Platform AI | Status | 🛠️ Cara Memasang / Memuat |
-| :--- | :---: | :--- |
-| <img src="https://img.shields.io/badge/Claude-705846?style=flat-square&logo=anthropic&logoColor=white"/> | `Recommended` | Buat **Project** baru $\rightarrow$ Buka **Project Knowledge** $\rightarrow$ Unggah `1. SKILL.md` & `daftar_font.txt`. |
-| <img src="https://img.shields.io/badge/Claude_Code-111111?style=flat-square&logo=terminal&logoColor=white"/> | `Advanced` | Salin folder `panduan-sampel-font/` ke direktori lokal `~/.claude/skills/panduan-sampel-font/SKILL.md`. |
-| <img src="https://img.shields.io/badge/ChatGPT-74aa9c?style=flat-square&logo=openai&logoColor=white"/> | `Popular` | Pilih **Explore GPTs** $\rightarrow$ **Create** $\rightarrow$ Di tab **Configure**, unggah `1. SKILL.md` & `daftar_font.txt` ke bagian **Knowledge**. |
-| <img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white"/> | `Easy` | Buat **Gem** baru $\rightarrow$ Salin seluruh isi file `1. SKILL.md`, lalu tempelkan (*paste*) ke kolom **Instructions**. |
-| <img src="https://img.shields.io/badge/Python_Script-3776AB?style=flat-square&logo=python&logoColor=white"/> | `Auto` | Jalankan `python auto_installer.py` di terminal lokal Anda untuk memasang adapter secara otomatis. |
-| <img src="https://img.shields.io/badge/Chat_Biasa-Gray?style=flat-square"/> | `Quick` | Lampirkan file `1. SKILL.md` (dan `daftar_font.txt`) langsung di kolom percakapan saat membuka chat baru. |
-
----
-
-## 🚀 Langkah 3 — Cara Menggunakan Dalam Percakapan
-
-> [!NOTE]
-> Setelah skill terpasang, Anda **TIDAK PERLU** memasukkan prompt penggabungan file. Cukup ketik langsung kebutuhan dokumen Anda!
-
-### 💬 Contoh Prompt Siap Pakai:
-
-> 🟢 *"Saya ingin membuat dokumen proposal bisnis formal untuk klien perbankan."*  
-> 🔵 *"Buatkan draf laporan penelitian ilmiah dengan format font yang sesuai."*
-
----
-
-### 🔄 Alur Kerja Otomatis AI (`Turn 1` – `Turn 3`):
-
-```mermaid
-graph TD
-    A[🟡 Turn 1: Analisis & Kategori] --> B[🔵 Turn 2: Draf & Opsi Font]
-    B --> C[🟢 Turn 3: Konfirmasi & Output Final]
-```
-
-1. <mark><b>Turn 1 — Menu Kategori:</b></mark>  
-   AI menganalisis kebutuhan dokumen Anda dan menampilkan pilihan kategori beserta arah desain awal.
-
-2. <mark><b>Turn 2 — Rekomendasi Font & Draf:</b></mark>  
-   AI membuat draf isi dokumen sekaligus memberikan rekomendasi kombinasi font (Latin / Non-Latin / Mandarin) yang estetis dan berhierarki.
-
-3. <mark><b>Turn 3 — Konfirmasi & Finalisasi:</b></mark>  
-   Anda memilih pasangan font yang diinginkan, lalu AI mengunci format serta memberikan rincian teknis penataan dokumen.
+⚙️ Langkah 2 — Panduan Langkah-demi-Langkah Pemasangan per PlatformPilih platform/aplikasi AI yang Anda gunakan di browser Google Chrome atau desktop:🔵 1. Google Chrome — Gemini (gemini.google.com)Metode A: Menggunakan Fitur Gems (Permanen)Buka gemini.google.com di Google Chrome.Di panel sebelah kiri, klik Gems Manager (atau Create Gem / Gem Builder).Beri nama Gem, contoh: Logic Font Assistant.Buka berkas 1. SKILL.md dengan Notepad/Text Editor, salin seluruh isinya, lalu tempelkan (paste) ke kolom Instructions di Gem.Klik Save. Sekarang Anda bisa memakai skill ini kapan saja lewat menu Gems.Metode B: Melalui Chat Biasa / Side Panel ChromeBuka chat Gemini di Google Chrome.Klik ikon 📎 Lampirkan File / Upload File.Unggah file 1. SKILL.md dan daftar_font.txt.Ketik kebutuhan dokumen Anda di kolom chat.🟢 2. ChatGPT (chatgpt.com)Metode A: Menggunakan Custom GPT (Permanen untuk ChatGPT Plus/Team/Pro)Buka chatgpt.com $\rightarrow$ Klik Explore GPTs $\rightarrow$ Klik + Create.Masuk ke tab Configure.Masukkan nama: Font & Layout Designer.Scroll ke bawah ke bagian Knowledge $\rightarrow$ Klik Upload files.Unggah berkas 1. SKILL.md dan daftar_font.txt.Klik Save / Publish (Only me / Anyone with link).Metode B: Chat Biasa (ChatGPT Gratis)Buka percakapan baru di ChatGPT.Klik ikon 📎 (Plus/Attach) $\rightarrow$ Unggah 1. SKILL.md.Tuliskan permintaan dokumen Anda.🟠 3. Anthropic Claude (claude.ai)Metode A: Menggunakan Claude Projects (Rekomendasi)Buka claude.ai $\rightarrow$ Klik menu Projects $\rightarrow$ Create Project.Beri nama proyek (misal: Desain Dokumen & Font).Di kolom Project Knowledge, klik Add Content / Upload.Unggah berkas 1. SKILL.md dan daftar_font.txt.Mulai percakapan di dalam project tersebut.Metode B: Claude Code / Terminal CLISalin folder panduan-sampel-font/ ke direktori lokal:
+~/.claude/skills/panduan-sampel-font/SKILL.mdClaude Code akan mendeteksi skill secara otomatis.🟣 4. Microsoft Copilot & Aplikasi AI Lainnya (Web / Desktop)Buka browser atau aplikasi AI pilihan Anda (Microsoft Copilot, Perplexity, Poe, Ollama GUI, dll).Lampirkan file 1. SKILL.md pada pesan pertama sesi chat baru.Atau buka file 1. SKILL.md, salin teks instruksi utamanya, dan tempelkan sebagai system prompt / instruksi awal.🐍 5. Pemasangan Otomatis (Skrip Python)Jika Anda menggunakan lingkungan lokal/CLI:Buka Terminal / Command Prompt di folder hasil ekstraksi ZIP.Jalankan perintah:python panduan-sampel-font/auto_installer.py
+Skrip akan memasang adapter secara otomatis ke sistem/AI lokal Anda.🚀 Langkah 3 — Cara Menggunakan Dalam Percakapan[!NOTE]
+Setelah skill terpasang di platform AI pilihan Anda, Anda TIDAK PERLU menjalankan prompt rumit untuk menggabungkan file. Cukup ketik langsung kebutuhan dokumen Anda!+-----------------------------------------------------------------------+
+|                              ALUR KERJA                               |
+|                                                                       |
+|  [ Input Pengguna ] ---> ( Turn 1: Menu Kategori & Analisis )         |
+|                                 |                                     |
+|                                 v                                     |
+|                          ( Turn 2: Draf & Rekomendasi Font )          |
+|                                 |                                     |
+|                                 v                                     |
+|                          ( Turn 3: Konfirmasi & Output Final )        |
++-----------------------------------------------------------------------+
+💬 Contoh Prompt Siap Pakai:🟢 "Saya ingin membuat dokumen proposal bisnis formal untuk klien perbankan."🔵 "Buatkan draf laporan penelitian ilmiah dengan format font yang sesuai."🔴 "Saya butuh desain pamflet promosi produk UMKM makanan lokal."🔄 Penjelasan Alur Kerja (Turn 1 – Turn 3):Turn 1 — Menu Kategori:AI menganalisis kebutuhan dokumen Anda dan menampilkan pilihan kategori beserta arah hierarki visual.Turn 2 — Rekomendasi Font & Draf Konten:AI menyusun draf isi dokumen sekaligus memberikan rekomendasi kombinasi font (Latin / Non-Latin / Mandarin) yang presisi.Turn 3 — Konfirmasi & Finalisasi:Anda mengonfirmasi pasangan font pilihan, lalu AI mengunci format serta memberikan panduan penataan spesifikasi cetak/digital lengkap.
