@@ -1,3 +1,170 @@
+1. Arial
+2. Times New Roman
+3. Helvetica
+4. Calibri
+5. Roboto
+6. Open Sans
+7. Lato
+8. Montserrat
+9. Garamond
+10. Georgia
+11. Verdana
+12. Tahoma
+13. Courier New
+14. Trebuchet MS
+15. Comic Sans MS
+16. Impact
+17. Century Gothic
+18. Futura
+19. Palatino Linotype
+20. Lucida Sans Unicode
+21. Inter
+22. Poppins
+23. Raleway
+24. Oswald
+25. Ubuntu
+26. Noto Sans
+27. Source Sans Pro
+28. PT Sans
+29. Merriweather
+30. Nunito
+31. Playfair Display
+32. Lora
+33. Rubik
+34. Work Sans
+35. Fira Sans
+36. Quicksand
+37. Inconsolata
+38. Droid Sans
+39. Mukta
+40. Josefin Sans
+41. Anton
+42. Cabin
+43. Dancing Script
+44. Pacifico
+45. Bebas Neue
+46. Baskerville
+47. Bodoni
+48. Didot
+49. Rockwell
+50. Optima
+51. Avenir
+52. Proxima Nova
+53. Gotham
+54. Frutiger
+55. Univers
+56. FF Din
+57. Franklin Gothic
+58. Gill Sans
+59. Myriad Pro
+60. Segoe UI
+61. San Francisco
+62. Consolas
+63. Monaco
+64. Menlo
+65. Courier
+66. Lucida Console
+67. Bell MT
+68. Book Antiqua
+69. Bookman Old Style
+70. Calibri Light
+71. Cambria
+72. Candara
+73. Constantia
+74. Corbel
+75. Ebrima
+76. Franklin Gothic Medium
+77. Gabriola
+78. Gadugi
+79. Leelawadee
+80. Malgun Gothic
+81. Microsoft Himalaya
+82. Microsoft JhengHei
+83. Microsoft New Tai Lue
+84. Microsoft PhagsPa
+85. Microsoft Sans Serif
+86. Microsoft Tai Le
+87. Microsoft YaHei
+88. Microsoft Yi Baiti
+89. MingLiU
+90. Myanmar Text
+91. Nirmala UI
+92. Palatino
+93. Segoe Print
+94. Segoe Script
+95. Sitka Small
+96. Sylfaen
+97. Symbol
+98. Webdings
+99. Wingdings
+100. Yu Gothic
+101. Brush Script MT
+102. Copperplate Gothic
+103. Stencil
+104. Vivaldi
+105. Vladimir Script
+106. Wide Latin
+107. Algerian
+108. Bauhaus 93
+109. Braggadocio
+110. Britannic Bold
+111. Broadway
+112. Castellar
+113. Centaur
+114. Colonna MT
+115. Cooper Black
+116. Engravers MT
+117. Felix Titling
+118. Footlight MT Light
+119. Forte
+120. Gigi
+121. Gloucester MT Extra Condensed
+122. Goudy Old Style
+123. Haettenschweiler
+124. Harrington
+125. Imprint MT Shadow
+126. Informal Roman
+127. Juice ITC
+128. Kristen ITC
+129. Kunstler Script
+130. Lucida Calligraphy
+131. Lucida Handwriting
+132. Magneto
+133. Maiandra GD
+134. Matura MT Script Capitals
+135. Mistral
+136. Niagara Engraved
+137. Niagara Solid
+138. OCR A Extended
+139. Old English Text MT
+140. Onyx
+141. Parchment
+142. Playbill
+143. Poor Richard
+144. Pristina
+145. Rage Italic
+146. Ravie
+147. Script MT Bold
+148. Showcard Gothic
+149. Snap ITC
+150. Tempus Sans ITC
+151. Viner Hand ITC
+152. Blackadder ITC
+153. Edwardian Script ITC
+154. French Script MT
+155. Harlow Solid Italic
+156. Elephant
+157. Eras Bold ITC
+158. High Tower Text
+159. Monotype Corsiva
+160. Papyrus
+161. Jokerman
+162. Chiller
+163. Curlz MT
+164. Bleeding Cowboys
+165. Trajan Pro
+166. Zapf Dingbats
+167. Hobo Std
 # GLOBAL FONT INDEX — MULTI-SCRIPT
 
 ## Font referensi Latin
