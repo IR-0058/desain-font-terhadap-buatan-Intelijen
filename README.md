@@ -1,46 +1,82 @@
-Cara Cepat Menggunakan Skill.LOGIC
-Cara Cepat Menggunakan .LOGICKeterampilan
-Sumber / Sumber: https://github.com/IR-0058/desain-font-terhadap-buatan-Intelijen
+# 🎨 Cara Cepat Menggunakan Skill .LOGIC (`panduan-sampel-font`)
 
-Langkah 1 — Unduh ZIP
-Langkah 1 — Unduh file ZIP
-ID: Buka repo di atas → tombol Code → Download ZIP . Ekstrak, pastikan ada folder .LOGICberisi 5 file: README.md, SKILL.md, daftar_font.txt, spesifikasi_font.txt, skill_bantu.md.
+<p align="left">
+  <img src="https://img.shields.io/badge/Status-Ready-brightgreen?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/Version-2.0-blue?style=for-the-badge" alt="Version">
+  <img src="https://img.shields.io/badge/Platform-Claude%20%7C%20ChatGPT%20%7C%20Gemini-orange?style=for-the-badge" alt="Platforms">
+</p>
 
-EN: Buka repositori di atas → Tombol Kode → Unduh ZIP . Ekstrak, pastikan .LOGICfolder dengan 5 file tersebut ada di sana: README.md, SKILL.md, daftar_font.txt, spesifikasi_font.txt, skill_bantu.md.
+---
 
-Langkah 2 — Lemparkan ke AI + Prompt
-Langkah 2 — Berikan ke AI + Prompt
-ID: Buka chat baru dengan AI apa pun yang kamu pakai (Claude, ChatGPT, Gemini, dll), unggah/lampirkan file kelima tadi, lalu ketik prompt ini:
+🔗 **Sumber Repositori:**  
+👉 [GitHub — `IR-0058/desain-font-terhadap-buatan-Intelijen`](https://github.com/IR-0058/desain-font-terhadap-buatan-Intelijen)
 
-EN: Buka obrolan baru dengan AI mana pun yang Anda gunakan (Claude, ChatGPT, Gemini, dll.), unggah/lampirkan kelima file tersebut, lalu ketik perintah ini:
+---
 
-Gabungkan isi README.md, SKILL.md, skill_bantu.md, spesifikasi_font.txt,
-dan daftar_font.txt menjadi SATU file SKILL.md yang ringkas dan lengkap,
-yang bisa langsung dipakai sebagai skill untuk memandu pengguna memilih
-font dan menyusun dokumen lewat alur Turn 1-3. Jangan ubah nomor/nama
-font. Format sebagai satu file markdown siap pakai.
-Merge the contents of README.md, SKILL.md, skill_bantu.md,
-spesifikasi_font.txt, and daftar_font.txt into ONE concise, complete
-SKILL.md file that can be used directly as a skill to guide users
-through font selection and document structuring via the Turn 1-3
-flow. Don't change any font numbers/names. Format it as a single
-ready-to-use markdown file.
-Langkah 3 — Simpan sebagai SKILL.md di perangkat
-Langkah 3 — Simpan sebagai SKILL.md di perangkat Anda
-ID: Setelah AI mengeluarkan hasilnya, simpan sebagai file SKILL.mddi folder lokal perangkatmu (misalnya Documents/skills/font-logic/SKILL.md).
+## 📥 Langkah 1 — Unduh Repositori
 
-Setelah AI menghasilkan output, simpan sebagai SKILL.mdfile di folder lokal pada perangkat Anda (misalnya Documents/skills/font-logic/SKILL.md).
+> [!TIP]
+> **Petunjuk Cepat:** Anda hanya perlu mengunduh file ZIP sekali untuk mendapatkan seluruh instruksi dan daftar font.
 
-Langkah 4 — Pasang sesuai AI yang dipakai
-Langkah 4 — Muat sesuai dengan AI yang Anda gunakan
-AI	ID — Cara pasang	EN — Cara memuatnya
-Claude (web/aplikasi)	Unggah SKILL.mdke Project Knowledge pada sebuah Project	Unggah SKILL.mdke Project Knowledge dalam sebuah Proyek
-Claude Code / Ruang Kerja Bersama	Taruh di ~/.claude/skills/<nama>/SKILL.md(keterampilan pribadi)	Tempatkan di ~/.claude/skills/<name>/SKILL.md(keahlian pribadi)
-ChatGPT	Buat GPT Kustom → masukkan SKILL.mdke bagian Pengetahuan	Buat GPT Kustom → tambahkan SKILL.mddi bawah Pengetahuan
-Gemini	Buat Permata baru → tempelkan isi SKILL.mdke proses Permata	Buat Gem baru → tempel SKILL.mdkonten ke dalam instruksi Gem.
-AI lain / lainnya	Lampirkan SKILL.mddi awal chat setiap kali mulai sesi baru	Lampirkan SKILL.mddi awal setiap sesi obrolan baru.
-Langkah 5 — Mulai memakai
-Langkah 5 — Mulai menggunakannya
-ID: Di chat baru (dengan SKILL.mdsudah terpasang/terlampir), cukup ketik kebutuhan dokumenmu. AI akan otomatis menampilkan kategori menu (Turn 1), lanjut rekomendasi font + draf (Turn 2), lalu konfirmasi font (Turn 3).
+1. Buka repositori GitHub melalui tautan di atas.
+2. Klik tombol hijau **`Code`** $\rightarrow$ Pilih 📥 **`Download ZIP`**.
+3. Ekstrak file ZIP di perangkat Anda.
+4. Pastikan struktur berkas di dalam folder memuat:
 
-EN: Dalam obrolan baru (dengan SKILL.mddokumen yang sudah dimuat/terlampir), cukup ketik dokumen yang Anda butuhkan. AI akan secara otomatis menampilkan menu kategori (Langkah 1), kemudian rekomendasi font + draf (Langkah 2), lalu konfirmasi font (Langkah 3).
+```text
+📦 desain-font-terhadap-buatan-Intelijen
+ ┣ 📄 README.md
+ ┗ 📂 panduan-sampel-font/
+    ┣ 📜 1. SKILL.md             <-- (Instruksi Utama Skill)
+    ┣ 📜 PLATFORM_SETUP.md        <-- (Panduan Lanjutan)
+    ┣ 📄 daftar_font.txt         <-- (Basis Data Font)
+    ┣ 📄 strukturnya.txt
+    ┣ 🐍 auto_installer.py        <-- (Skrip Pemasangan Otomatis)
+    ┗ 📂 adapters/                <-- (Khusus Claude, Gemini, Copilot, dll.)
+```
+
+---
+
+## ⚙️ Langkah 2 — Pemasangan Sesuai Platform AI
+
+Pilih metode di bawah ini sesuai dengan platform AI yang Anda gunakan:
+
+| Platform AI | Status | 🛠️ Cara Memasang / Memuat |
+| :--- | :---: | :--- |
+| <img src="https://img.shields.io/badge/Claude-705846?style=flat-square&logo=anthropic&logoColor=white"/> | `Recommended` | Buat **Project** baru $\rightarrow$ Buka **Project Knowledge** $\rightarrow$ Unggah `1. SKILL.md` & `daftar_font.txt`. |
+| <img src="https://img.shields.io/badge/Claude_Code-111111?style=flat-square&logo=terminal&logoColor=white"/> | `Advanced` | Salin folder `panduan-sampel-font/` ke direktori lokal `~/.claude/skills/panduan-sampel-font/SKILL.md`. |
+| <img src="https://img.shields.io/badge/ChatGPT-74aa9c?style=flat-square&logo=openai&logoColor=white"/> | `Popular` | Pilih **Explore GPTs** $\rightarrow$ **Create** $\rightarrow$ Di tab **Configure**, unggah `1. SKILL.md` & `daftar_font.txt` ke bagian **Knowledge**. |
+| <img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white"/> | `Easy` | Buat **Gem** baru $\rightarrow$ Salin seluruh isi file `1. SKILL.md`, lalu tempelkan (*paste*) ke kolom **Instructions**. |
+| <img src="https://img.shields.io/badge/Python_Script-3776AB?style=flat-square&logo=python&logoColor=white"/> | `Auto` | Jalankan `python auto_installer.py` di terminal lokal Anda untuk memasang adapter secara otomatis. |
+| <img src="https://img.shields.io/badge/Chat_Biasa-Gray?style=flat-square"/> | `Quick` | Lampirkan file `1. SKILL.md` (dan `daftar_font.txt`) langsung di kolom percakapan saat membuka chat baru. |
+
+---
+
+## 🚀 Langkah 3 — Cara Menggunakan Dalam Percakapan
+
+> [!NOTE]
+> Setelah skill terpasang, Anda **TIDAK PERLU** memasukkan prompt penggabungan file. Cukup ketik langsung kebutuhan dokumen Anda!
+
+### 💬 Contoh Prompt Siap Pakai:
+
+> 🟢 *"Saya ingin membuat dokumen proposal bisnis formal untuk klien perbankan."*  
+> 🔵 *"Buatkan draf laporan penelitian ilmiah dengan format font yang sesuai."*
+
+---
+
+### 🔄 Alur Kerja Otomatis AI (`Turn 1` – `Turn 3`):
+
+```mermaid
+graph TD
+    A[🟡 Turn 1: Analisis & Kategori] --> B[🔵 Turn 2: Draf & Opsi Font]
+    B --> C[🟢 Turn 3: Konfirmasi & Output Final]
+```
+
+1. <mark><b>Turn 1 — Menu Kategori:</b></mark>  
+   AI menganalisis kebutuhan dokumen Anda dan menampilkan pilihan kategori beserta arah desain awal.
+
+2. <mark><b>Turn 2 — Rekomendasi Font & Draf:</b></mark>  
+   AI membuat draf isi dokumen sekaligus memberikan rekomendasi kombinasi font (Latin / Non-Latin / Mandarin) yang estetis dan berhierarki.
+
+3. <mark><b>Turn 3 — Konfirmasi & Finalisasi:</b></mark>  
+   Anda memilih pasangan font yang diinginkan, lalu AI mengunci format serta memberikan rincian teknis penataan dokumen.
