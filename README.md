@@ -24,8 +24,8 @@
 Buka platform AI pilihan Anda (Gemini, ChatGPT, atau Claude), **lampirkan berkas `.zip`**, lalu tempelkan prompt perintah otomatis berikut:
 
 ```
-Create a skill
 
+Create a skill
 
 ```
 
