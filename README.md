@@ -1,4 +1,4 @@
-# ⚡ Cara Tercepat: Instalasi Skill / Keahlian Gemini (`SKILL.md`)
+# ⚡ Cara cepat: Instalasi Skill / Keahlian(`SKILL.md`)
 
 **Sumber Repositori:**
 [GitHub — `IR-0058/desain-font-terhadap-buatan-Intelijen`](https://github.com/IR-0058/desain-font-terhadap-buatan-Intelijen)
