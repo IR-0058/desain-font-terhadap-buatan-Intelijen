@@ -6,10 +6,10 @@
 ## 🚀 Alur Otomatis 3 Langkah Kilat
 
 > **Tujuan Utama:**
-> Ekstrak file ZIP -> AI/LLM langsung menggabungkan seluruh instruksi -> Langsung tersimpan sebagai **`SKILL.md`** atau Keahlian AI bernama **`membantu-memilih-font`**.
+> file ZIP -> AI/LLM langsung menggabungkan seluruh instruksi -> Langsung tersimpan sebagai **`SKILL.md`** atau Keahlian AI bernama **`membantu-memilih-font`**.
 
 **Skema Alur:**
-`Unduh ZIP Repositori` -> `Unggah ZIP + Prompt Otomatis` -> `AI Ekstrak & Buat SKILL.md` -> `Aktifkan Keahlian: membantu-memilih-font`
+`Unduh ZIP Repositori`,`Unggah ZIP + Prompt Otomatis` -> `AI Ekstrak & Buat SKILL.md` -> `Aktifkan Keahlian: membantu-memilih-font`
 
 ## 📥 Langkah 1 — Unduh Berkas ZIP
 
